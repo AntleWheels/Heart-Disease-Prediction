@@ -49,11 +49,11 @@ from sklearn.metrics import accuracy_score
 print("Accuracy Score = ",accuracy_score(y_test,y_pred)*100 ,"%")
 
 #Model Prediction
-test_prediction = NB.predict([[63,1,3,145,233,1,0,150,0,2.3,0]])
+test_prediction = NB.predict([[60,1,3,145,233,1,0,150,0,2.3,0]])
 if test_prediction == 1:
     print("The Person has Heart Disease ,Please conduct to the doctor")
 else:
     print("The Person has no Heart Disease")
-import pickle
-pickle.dump(NB,open('model.pkl','wb'))
+# import pickle
+# pickle.dump(NB,open('model.pkl','wb'))
 
